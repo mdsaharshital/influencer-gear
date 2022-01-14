@@ -240,7 +240,7 @@ footer div a i {
 .newsletter {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   margin-top: 20px;
 }
 .newsletter h1 {
