@@ -35,7 +35,7 @@ a {
   text-align: center;
   padding-top: 8px;
   color: #fff;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 /*============
@@ -75,7 +75,7 @@ main section
   font-weight: 700;
 }
 .half-left p {
-  font-weight: 600;
+  font-weight: 400;
   line-height: 24px;
   margin: 16px 0;
 }
@@ -104,9 +104,51 @@ popular section
   font-size: 28px;
   font-size: 24px;
 }
-.fas {
+.card .fas {
   color: gold;
 }
 .card small {
   color: #787885;
+}
+.left-btn {
+  text-align: right;
+  position: relative;
+  right: 30px;
+  top: 15px;
+}
+.left-btn a {
+  color: var(--btn-color);
+  font-weight: bold;
+  font-size: 16px;
+}
+/*============
+footer section
+ =============*/
+footer {
+  background-color: #0a0826;
+  color: white;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer h1 {
+  font-size: 24px;
+}
+footer small {
+  font-size: 12px;
+}
+footer div {
+  padding-top: 16px;
+}
+footer div a {
+  margin-right: 16px;
+  color: white;
+  padding: 7.5px;
+  border-radius: 50%;
+  background-color: #22213c;
+}
+footer div a i {
+  font-size: 16px;
 }
