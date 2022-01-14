@@ -35,7 +35,12 @@ a {
   text-align: center;
   padding-top: 8px;
   color: #fff;
-  font-weight: 400;
+  transition: 0.3s all ease-in;
+}
+.btn:hover {
+  background-color: white;
+  color: var(--btn-color);
+  border: 3px solid var(--btn-color);
 }
 
 /*============
@@ -51,6 +56,17 @@ nav ul {
 nav ul li {
   list-style: none;
   margin-right: 10px;
+  transition: 0.3s all ease-in;
+}
+nav ul li:hover {
+  opacity: 0.5;
+}
+nav ul li i {
+  transition: 0.3s all ease;
+}
+nav ul li i:hover {
+  transform: scale(1.2);
+  opacity: 1;
 }
 nav ul li a {
   text-decoration: none;
@@ -79,6 +95,20 @@ main section
   line-height: 24px;
   margin: 16px 0;
 }
+.half-right img {
+  animation: cam 2s 0.5s infinite forwards;
+}
+@keyframes cam {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*============
 popular section
  =============*/
@@ -99,6 +129,13 @@ popular section
   padding: 15px;
   box-shadow: 0 20px 50px rgba(0, 0, 5, 0.2);
 }
+.card img {
+  transition: 0.3s all ease;
+  overflow: hidden;
+}
+img:hover {
+  transform: scale(1.1);
+}
 .card-title {
   font-weight: 500;
   font-size: 28px;
@@ -113,14 +150,21 @@ popular section
 .left-btn {
   text-align: right;
   position: relative;
-  right: 30px;
+  right: 25px;
   top: 15px;
+}
+.left-btn a:hover {
+  background-color: var(--btn-color);
+  color: white;
 }
 .left-btn a {
   color: var(--btn-color);
   font-weight: bold;
   font-size: 16px;
+  transition: 0.3s all ease;
+  padding: 10px 20px;
 }
+
 /*============
 footer section
  =============*/
@@ -148,7 +192,43 @@ footer div a {
   padding: 7.5px;
   border-radius: 50%;
   background-color: #22213c;
+  transition: 0.3s all ease;
+}
+footer div a:hover {
+  background-color: white;
+  color: black;
 }
 footer div a i {
   font-size: 16px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.newsletter h1 {
+  margin-right: 1em;
+  color: white;
+}
+.newsletter input[type="email"] {
+  padding: 10px 30px;
+  outline: 0;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.newsletter input[type="submit"] {
+  padding: 10px 30px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  outline: 0;
+  border: none;
+  background-color: var(--btn-color);
+  color: white;
+  transition: 0.3s all;
+}
+.newsletter input[type="submit"]:hover {
+  background-color: #22213c;
 }
