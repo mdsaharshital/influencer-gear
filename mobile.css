@@ -14,6 +14,7 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    margin-top: 16px;
   }
   nav ul li {
     margin-right: 10px;
@@ -46,16 +47,11 @@
   .half-right img {
     width: 80%;
   }
-  .companies {
-    grid-template-columns: repeat(3, 1fr);
+  .companies img {
+    width: 100px;
+    padding: 10px 25px;
   }
-  .company {
-    width: 100%;
-  }
-  .companies:nth-last-child() {
-    grid-column: 1 / span 3;
-    text-align: center;
-  }
+
   .cards,
   .popular,
   .orders {

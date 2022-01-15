@@ -113,19 +113,15 @@ main section
 company section
  =============*/
 .companies {
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  justify-items: center;
   margin: 20px 0;
 }
-.company {
+.companies img {
+  width: 150px;
   padding: 10px 25px;
-  width: 100%;
-}
-.company img {
-  width: 70px;
 }
 
 /*============
@@ -152,7 +148,7 @@ popular section
   transition: 0.3s all ease;
   overflow: hidden;
 }
-img:hover {
+.card img:hover {
   transform: scale(1.1);
 }
 .card-title {
